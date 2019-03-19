@@ -1762,3 +1762,256 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1553007193.654
     'REQUEST_TIME' => 1553007193
 ]
+2019-03-20 00:15:25 [127.0.0.1][-][-][error][yii\web\HttpException:400] yii\web\HttpException: Не могу получить контент с ресурса some.txt.
+ Ошибка: file_get_contents(some.txt): failed to open stream: No such file or directory in /var/www/html/app.loc/models/Parser.php:76
+Stack trace:
+#0 /var/www/html/app.loc/models/Parser.php(32): app\models\Parser->getContent()
+#1 /var/www/html/app.loc/controllers/SiteController.php(48): app\models\Parser->parse(true)
+#2 [internal function]: app\controllers\SiteController->actionIndex()
+#3 /var/www/html/app.loc/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/app.loc/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#7 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/app.loc/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2019-03-20 00:15:25 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'bqsud1etjdnj4722qm3tccuq61'
+    '_csrf' => '13dba1f68db5b6017c233152d01e7f7f1d8d1a37972ee286d9579fbe50a0839ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jrTEde2qtAxu2VDiQ7mUnt1djajEsFzC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'app.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,cs;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=bqsud1etjdnj4722qm3tccuq61; _csrf=13dba1f68db5b6017c233152d01e7f7f1d8d1a37972ee286d9579fbe50a0839ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jrTEde2qtAxu2VDiQ7mUnt1djajEsFzC%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Ubuntu) Server at app.loc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Ubuntu)'
+    'SERVER_NAME' => 'app.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/app.loc/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/app.loc/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/app.loc/web/index.php'
+    'REMOTE_PORT' => '34076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1553008525.663
+    'REQUEST_TIME' => 1553008525
+]
+2019-03-20 00:21:11 [127.0.0.1][-][bqsud1etjdnj4722qm3tccuq61][error][yii\web\HttpException:400] yii\web\HttpException: Не могу получить контент с ресурса some.txt.
+ Ошибка: file_get_contents(some.txt): failed to open stream: No such file or directory in /var/www/html/app.loc/models/Parser.php:76
+Stack trace:
+#0 /var/www/html/app.loc/models/Parser.php(32): app\models\Parser->getContent()
+#1 /var/www/html/app.loc/controllers/SiteController.php(48): app\models\Parser->parse(true)
+#2 [internal function]: app\controllers\SiteController->actionIndex()
+#3 /var/www/html/app.loc/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/app.loc/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#7 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/app.loc/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2019-03-20 00:21:11 [127.0.0.1][-][bqsud1etjdnj4722qm3tccuq61][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'bqsud1etjdnj4722qm3tccuq61'
+    '_csrf' => '13dba1f68db5b6017c233152d01e7f7f1d8d1a37972ee286d9579fbe50a0839ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jrTEde2qtAxu2VDiQ7mUnt1djajEsFzC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'app.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,cs;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=bqsud1etjdnj4722qm3tccuq61; _csrf=13dba1f68db5b6017c233152d01e7f7f1d8d1a37972ee286d9579fbe50a0839ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jrTEde2qtAxu2VDiQ7mUnt1djajEsFzC%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Ubuntu) Server at app.loc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Ubuntu)'
+    'SERVER_NAME' => 'app.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/app.loc/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/app.loc/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/app.loc/web/index.php'
+    'REMOTE_PORT' => '34110'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1553008871.271
+    'REQUEST_TIME' => 1553008871
+]
+2019-03-20 00:21:53 [127.0.0.1][-][bqsud1etjdnj4722qm3tccuq61][error][yii\web\HttpException:400] yii\web\HttpException: Не могу получить контент с ресурса some.txt.
+ Ошибка: file_get_contents(some.txt): failed to open stream: No such file or directory in /var/www/html/app.loc/models/Parser.php:76
+Stack trace:
+#0 /var/www/html/app.loc/models/Parser.php(32): app\models\Parser->getContent()
+#1 /var/www/html/app.loc/controllers/SiteController.php(61): app\models\Parser->parse(true)
+#2 [internal function]: app\controllers\SiteController->actionIndex()
+#3 /var/www/html/app.loc/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/app.loc/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#7 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/app.loc/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2019-03-20 00:21:53 [127.0.0.1][-][bqsud1etjdnj4722qm3tccuq61][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'bqsud1etjdnj4722qm3tccuq61'
+    '_csrf' => '13dba1f68db5b6017c233152d01e7f7f1d8d1a37972ee286d9579fbe50a0839ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jrTEde2qtAxu2VDiQ7mUnt1djajEsFzC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'app.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,cs;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=bqsud1etjdnj4722qm3tccuq61; _csrf=13dba1f68db5b6017c233152d01e7f7f1d8d1a37972ee286d9579fbe50a0839ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jrTEde2qtAxu2VDiQ7mUnt1djajEsFzC%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Ubuntu) Server at app.loc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Ubuntu)'
+    'SERVER_NAME' => 'app.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/app.loc/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/app.loc/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/app.loc/web/index.php'
+    'REMOTE_PORT' => '34138'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1553008913.938
+    'REQUEST_TIME' => 1553008913
+]
+2019-03-20 00:22:45 [127.0.0.1][-][bqsud1etjdnj4722qm3tccuq61][error][yii\web\HttpException:451] yii\web\HttpException: Не могу получить контент с ресурса some.txt.
+ Ошибка: file_get_contents(some.txt): failed to open stream: No such file or directory in /var/www/html/app.loc/models/Parser.php:76
+Stack trace:
+#0 /var/www/html/app.loc/models/Parser.php(32): app\models\Parser->getContent()
+#1 /var/www/html/app.loc/controllers/SiteController.php(61): app\models\Parser->parse(true)
+#2 [internal function]: app\controllers\SiteController->actionIndex()
+#3 /var/www/html/app.loc/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /var/www/html/app.loc/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('site/index', Array)
+#7 /var/www/html/app.loc/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /var/www/html/app.loc/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2019-03-20 00:22:45 [127.0.0.1][-][bqsud1etjdnj4722qm3tccuq61][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'bqsud1etjdnj4722qm3tccuq61'
+    '_csrf' => '13dba1f68db5b6017c233152d01e7f7f1d8d1a37972ee286d9579fbe50a0839ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jrTEde2qtAxu2VDiQ7mUnt1djajEsFzC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'app.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,cs;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=bqsud1etjdnj4722qm3tccuq61; _csrf=13dba1f68db5b6017c233152d01e7f7f1d8d1a37972ee286d9579fbe50a0839ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jrTEde2qtAxu2VDiQ7mUnt1djajEsFzC%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.38 (Ubuntu) Server at app.loc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.38 (Ubuntu)'
+    'SERVER_NAME' => 'app.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/app.loc/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/app.loc/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/var/www/html/app.loc/web/index.php'
+    'REMOTE_PORT' => '34160'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1553008965.815
+    'REQUEST_TIME' => 1553008965
+]
