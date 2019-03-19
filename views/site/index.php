@@ -13,7 +13,16 @@ $this->title = 'WordParser';
                         Исходный текст
                     </div>
                     <div class="panel-body">
+                        <?php if(empty($parser->getContent())):?>
+                            <div class="alert alert-warning">
+                                Пусто
+                            </div>
+                        <?php else:?>
                         <?=$parser->getContent()?>
+                        <?php endif;?>
+                    </div>
+                    <div class="panel-footer">
+                        Контент берется из файла some.txt, который находится в папке <b>web</b>
                     </div>
                 </div>
             </div>
